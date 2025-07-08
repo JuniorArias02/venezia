@@ -36,9 +36,9 @@ export default function Footer() {
             HORARIO
           </h3>
           <ul className="space-y-2 text-gray-300">
-            <li>Lunes a Viernes: 12pm - 10pm</li>
-            <li>Sábados: 11am - 11pm</li>
-            <li>Domingos: 11am - 9pm</li>
+            <li>Lunes a Viernes: 4pm - 12am</li>
+            <li>Sábados: 4pm - 12am</li>
+            <li>Domingos: 4pm - 12am</li>
           </ul>
         </div>
 
