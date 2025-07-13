@@ -1,4 +1,5 @@
 const ROOT_PIZZA = "/pizza";
+const ROOT_HAMBURGUESA ="/hamburguesa" 
 
 export const RUTAS = {
   INICIO: "/inicio",
@@ -6,6 +7,12 @@ export const RUTAS = {
 
   PIZZA: {
     ROOT: ROOT_PIZZA,
-    DETALLES: `${ROOT_PIZZA}/:id`, 
+    DETALLES: `${ROOT_PIZZA}/:slug`,
   },
+
+  HAMBURGUESA: {
+    ROOT: ROOT_HAMBURGUESA,
+    DETALLES: `${ROOT_HAMBURGUESA}/:slug`
+  }
+
 };

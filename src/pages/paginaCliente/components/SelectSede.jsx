@@ -13,9 +13,10 @@ export default function SelectSede() {
       className="text-white mb-6 mt-8"
     >
       <label className="block mb-2 font-medium text-[#FFCA03] text-sm uppercase tracking-wider">
-        ¿Dónde quieres tu pizza?
+        Selecciona tu sede más cercana
       </label>
-      
+
+
       <div className="relative">
         <select
           value={sedeActual.id}
@@ -30,14 +31,14 @@ export default function SelectSede() {
             </option>
           ))}
         </select>
-        
+
         <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[#FFCA03]">
           <ChevronDown className="h-5 w-5" />
         </div>
       </div>
-      
+
       {sedeActual && (
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className="mt-2 text-sm text-gray-300"

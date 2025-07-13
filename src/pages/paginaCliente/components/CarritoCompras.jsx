@@ -39,13 +39,15 @@ export default function CarritoCompras({ abierto, cerrar }) {
 			`${pedidos
 				.map(p => {
 					const nombreTamano = tamanos.find(t => t.id === p.tamano)?.nombre || 'Tamaño único';
-					return `➡ ${p.nombre} (${nombreTamano}) - $${p.precio.toLocaleString()}`;
+					const tipo = p.id.startsWith("hamb-") ? "Hamburguesa" : "Pizza";
+					return `➡ ${tipo}: ${p.nombre}` +
+						(tipo === "Pizza" ? ` (${nombreTamano})` : "") +
+						` - $${p.precio.toLocaleString()}`;
+
 				})
 				.join('\n')
 			}\n\n` +
-			`*Total: $${total.toLocaleString()}*\n\n` +
-			`Sede: ${sedeActual.barrio}\n` +
-			`Dirección: ${sedeActual.direccion || 'No especificada'}`;
+			`*Total: $${total.toLocaleString()}*\n\n`;
 
 		// Codificar el mensaje para URL
 		const mensajeCodificado = encodeURIComponent(mensaje);

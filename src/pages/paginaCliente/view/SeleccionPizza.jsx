@@ -4,14 +4,21 @@ import { usePedido } from '../../../store/PedidoContext';
 import { RUTAS } from '../../../routes/router';
 import { motion } from 'framer-motion';
 import { tamanos } from '../../../backend/json/json';
+import { pizzas } from '../../../backend/json/json';
 
 export default function SeleccionPizza() {
   const location = useLocation();
-  const pizza = location.state; // ya no usas useParams
-
+  const { slug } = useParams();
   const { agregarPedido } = usePedido();
   const [tamanoSeleccionado, setTamanoSeleccionado] = useState(null);
   const [isAdding, setIsAdding] = useState(false);
+
+  const pizza =
+    location.state ||
+    pizzas.find(h =>
+      h.nombre.toLowerCase().replace(/\s+/g, '-') === slug
+    );
+
 
   if (!pizza) return (
     <div className="min-h-screen bg-[#2C2C2C] flex items-center justify-center">

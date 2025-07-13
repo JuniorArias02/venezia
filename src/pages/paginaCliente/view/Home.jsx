@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <section className="relative h-[90vh] flex items-center justify-start bg-[#2C2C2C] overflow-hidden">
       <motion.div
-        className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1982&auto=format&fit=crop')] bg-cover bg-center opacity-30"
+        className="absolute inset-0 bg-[url('/fondo-menu.avif')] bg-cover bg-center opacity-30"
         variants={backgroundZoom}
         initial="initial"
         animate="animate"
