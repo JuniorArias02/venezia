@@ -638,70 +638,71 @@ export const sedes = [
 ]
 
 export const hamburguesas = [
-	{
-		id: 1,
-		nombre: "Clásica",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Carne de res, lechuga, tomate, cebolla y queso cheddar",
-		precio: 15000
-	},
-	{
-		id: 2,
-		nombre: "Doble Queso",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Doble carne, doble queso cheddar, pepinillos y salsa especial",
-		precio: 20000
-	},
-	{
-		id: 3,
-		nombre: "Pollo Crunch",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Pechuga de pollo crocante, lechuga, mayonesa y tomate",
-		precio: 17000
-	},
-	{
-		id: 4,
-		nombre: "BBQ Bacon",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Carne de res, tocino, cebolla crispy, queso y salsa BBQ",
-		precio: 22000
-	},
-	{
-		id: 5,
-		nombre: "Veggie",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Hamburguesa vegetal, tomate, lechuga, cebolla y guacamole",
-		precio: 16000
-	},
-	{
-		id: 6,
-		nombre: "Mexicana",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Carne de res, jalapeños, queso cheddar, guacamole y pico de gallo",
-		precio: 21000
-	},
-	{
-		id: 7,
-		nombre: "Champiñón Deluxe",
-		categoria_id: 8,
-		tipo_id: 2,
-		imagen: "",
-		descripcion: "Carne de res, champiñones salteados, queso suizo y cebolla caramelizada",
-		precio: 23000
-	}
+  {
+    id: 1,
+    nombre: "Croqueta de res o cerdo",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, cebolla, tomate, lechuga y huevo.",
+    precio: 10000
+  },
+  {
+    id: 2,
+    nombre: "Delicia di Pollo",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, cebolla, tomate, lechuga, carne, tocineta, huevo y papa.",
+    precio: 12000
+  },
+  {
+    id: 3,
+    nombre: "Delizia de Carne",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, cebolla, tomate, lechuga, carne mechada, huevo y tocineta.",
+    precio: 13000
+  },
+  {
+    id: 4,
+    nombre: "Mixta",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, huevo, carne mechada, pollo, cebolla, tomate, lechuga y tocineta.",
+    precio: 18000
+  },
+  {
+    id: 5,
+    nombre: "Chuleta o Tritare",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, chuleta ahumada, cebolla, tomate, lechuga, huevo y tocineta.",
+    precio: 18000
+  },
+  {
+    id: 6,
+    nombre: "Venezia Súper",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, chuleta ahumada, pollo, carne mechada, tomate, cebolla, lechuga, huevo y tocineta.",
+    precio: 22000
+  },
+  {
+    id: 7,
+    nombre: "Milanesa",
+    categoria_id: 8,
+    tipo_id: 2,
+    imagen: "",
+    descripcion: "Jamón, queso, milanesa de pollo, cebolla, tomate, tocineta y salsa.",
+    precio: 16000
+  }
 ];
+
 
 
 // colore de la web
